@@ -3,9 +3,16 @@
 ## Declare characters used by this game. The color argument colorizes the name
 ## of the character.
 
-define e = Character('Eileen')
+define harry = Character('harry')
+define benji = Character('benji')
+define penny = Character('penny')
+define jax = Character('jax')
+define grandma = Character('grandma')
 
-
+image harry happy ="scene1/harry happy.png"
+image benji neutral ="scene1/benji-single.png"
+image penny neutral ="scene1/penny-single.png"
+image jax = "scene1/jax.png"
 ## The game starts here.
 
 label start:
@@ -14,20 +21,22 @@ label start:
     ## file (named either "bg room.png" or "bg room.jpg") to the images
     ## directory to show it.
 
-    scene bg room
+    scene scene1/scene1
 
     ## This shows a character sprite. A placeholder is used, but you can replace
     ## it by adding a file named "eileen happy.png" to the images directory.
 
-    show eileen happy
-
+    show harry happy
+    show benji neutral at right
+    show penny neutral at left
+    show jax at Position(xpos =100) 
     ## These display lines of dialogue.
 
-    "Hello, world."
+    "Happy Birthday dear Harry, happy birthday to you"
 
-    e "You've created a new Ren'Py game."
+    grandma "Open your present Harry"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    harry "It's a new phone!, thanks Grandma"
 
     ## This ends the game.
 
