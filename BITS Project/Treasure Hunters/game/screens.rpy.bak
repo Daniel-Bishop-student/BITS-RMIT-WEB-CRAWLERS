@@ -184,18 +184,19 @@ screen main_menu():
         style "mm_root"
 
     # The main menu buttons.
-    frame:
-        style_group "mm"
-        xalign .98
-        yalign .98
-
-        has vbox
-
-        textbutton _("Start Game") action Start()
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Help") action Help()
-        textbutton _("Quit") action Quit(confirm=False)
+    imagemap:
+        ground "images/menu/mm_ground.png"
+        idle "images/menu/mm_idle.png"
+        hover "images/menu/mm_hover.png"
+        
+        alpha False
+        # This is so that everything transparent is invisible to the cursor. 
+       
+        hotspot (993, 126, 236, 105) action Start()
+        hotspot (1032, 263, 197, 99) action ShowMenu("load")
+        hotspot (970, 397, 254, 97) action ShowMenu("preferences")
+        hotspot (703, 296, 79, 36) action Help()
+        hotspot (1013, 528, 210, 107) action Quit(confirm=False)
 
 init -2:
 
