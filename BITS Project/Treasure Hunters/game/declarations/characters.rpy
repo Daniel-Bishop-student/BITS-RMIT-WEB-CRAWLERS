@@ -3,14 +3,14 @@
 
 label character_declarations:
 
-	define harry = Character('harry')
+    define harry = Character('harry')
 
-	define benji = Character('benji')
+    define benji = Character('benji')
 
-	define penny = Character('penny')
+    define penny = Character('penny')
 
-	define jax = Character('jax')
+    define jax = Character('jax')
 
-	define grandma = Character('grandma')
+    define grandma = Character('grandma')
 
-	return
+    return
