@@ -1,15 +1,17 @@
-# Run the declarations and code stored in the declarations directory
-call image_declarations
-call character_declarations
-# call other_declarations
+﻿# You can place the script of your game in this file.
 
-# Start of game code
+# Declare images below this line, using the image statement.
+# eg. image eileen happy = "eileen_happy.png"
+
+# Declare characters used by this game.
+define e = Character('Eileen', color="#c8ffc8")
+
+
+# The game starts here.
 label start:
 
-    # Stop main menu music
-    # stop music
+    e "You've created a new Ren'Py game."
 
-    # Start game from first scripting page
-    jump scene1
+    e "Once you add a story, pictures, and music, you can release it to the world!"
 
     return
