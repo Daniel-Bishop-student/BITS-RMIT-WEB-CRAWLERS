@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿## The script of the game goes in this file.
-
+# Run the declarations and code stored in the declarations directory
+call image_declarations
+call character_declarations
+# call other_declarations
 ## Declare characters used by this game. The color argument colorizes the name
 ## of the character.
 
@@ -31,5 +35,10 @@ label start:
 
     jump scene2
     ## This ends the game.
+=======
+
+
+
+>>>>>>> master
 
     return
