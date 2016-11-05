@@ -14,7 +14,7 @@ label character_declarations:
     define grandma = Character('Grandma')
 
     define slim = Character('Slim')
-<<<<<<< HEAD
+
     
     ##image locations##
     
@@ -22,7 +22,6 @@ label character_declarations:
     image benji neutral ="scene1/benji-single.png"
     image penny neutral ="scene1/penny-single.png"
     image jax = "scene1/jax.png"
-=======
->>>>>>> master
+
 
     return

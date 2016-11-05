@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿## The script of the game goes in this file.
+## The script of the game goes in this file.
 # Run the declarations and code stored in the declarations directory
 call image_declarations
 call character_declarations
@@ -35,10 +34,6 @@ label start:
 
     jump scene2
     ## This ends the game.
-=======
 
-
-
->>>>>>> master
 
     return
