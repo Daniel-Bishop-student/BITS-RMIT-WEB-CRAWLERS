@@ -3,16 +3,7 @@
 ## Declare characters used by this game. The color argument colorizes the name
 ## of the character.
 
-define harry = Character('harry')
-define benji = Character('benji')
-define penny = Character('penny')
-define jax = Character('jax')
-define grandma = Character('grandma')
 
-image harry happy ="scene1/harry happy.png"
-image benji neutral ="scene1/benji-single.png"
-image penny neutral ="scene1/penny-single.png"
-image jax = "scene1/jax.png"
 ## The game starts here.
 
 label start:
@@ -21,7 +12,7 @@ label start:
     ## file (named either "bg room.png" or "bg room.jpg") to the images
     ## directory to show it.
 
-    scene scene1/scene1
+    scene scene1
 
     ## This shows a character sprite. A placeholder is used, but you can replace
     ## it by adding a file named "eileen happy.png" to the images directory.
