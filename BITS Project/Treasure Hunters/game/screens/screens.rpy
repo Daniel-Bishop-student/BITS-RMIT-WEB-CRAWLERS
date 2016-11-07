@@ -317,23 +317,77 @@ screen save():
     tag menu
 
     use navigation
-    use file_picker
+
+    imagemap:
+        ground "images/menu/save_ground.png"
+        idle "images/menu/save_idle.png"
+        hover "images/menu/save_hover.png"
+        selected_idle "images/menu/save_selected_idle"
+        selected_hover "images/menu/save_selected_hover"
+        
+        alpha False
+        cache False
+     
+        hotspot (53, 100, 754, 157) clicked FilePage(1) activate_sound "sounds/click.mp3" hover_sound "sounds/hover.mp3"
+        hotspot (52, 286, 755, 158) clicked FilePage(2) activate_sound "sounds/click.mp3" hover_sound "sounds/hover.mp3"
+        hotspot (52, 469, 753, 158) clicked FilePage(3) activate_sound "sounds/click.mp3" hover_sound "sounds/hover.mp3"
+        
+        hotspot (53, 100, 754, 157) clicked FileSave(1):
+            use load_save_slot(number=1)
+        hotspot (52, 286, 755, 158) clicked FileSave(2):
+            use load_save_slot(number=2)
+        hotspot (52, 469, 753, 158) clicked FileSave(3):
+            use load_save_slot(number=3)
+
+        hotspot (926, 430, 158, 161) action Return()
+
+
 
 screen load():
 
-    # This ensures that any other menu screen is replaced.
     tag menu
 
     use navigation
-    use file_picker
 
-init -2:
-    style file_picker_frame is menu_frame
-    style file_picker_nav_button is small_button
-    style file_picker_nav_button_text is small_button_text
-    style file_picker_button is large_button
-    style file_picker_text is large_button_text
+    imagemap:
+        ground "images/menu/load_ground.png"
+        idle "images/menu/load_idle.png"
+        hover "images/menu/load_hover.png"
+        selected_idle "images/menu/load_selected_idle"
+        selected_hover "images/menu/load_selected_hover"
+        
+        alpha False
+        cache False
+        
+        hotspot (53, 100, 754, 157) clicked FilePage(1) activate_sound "sounds/click.mp3" hover_sound "sounds/hover.mp3"
+        hotspot (52, 286, 755, 158) clicked FilePage(2) activate_sound "sounds/click.mp3" hover_sound "sounds/hover.mp3"
+        hotspot (52, 469, 753, 158) clicked FilePage(3) activate_sound "sounds/click.mp3" hover_sound "sounds/hover.mp3"
+        
+        hotspot (53, 100, 754, 157) clicked FileLoad(1):
+            use load_save_slot(number=1)
+        hotspot (52, 286, 755, 158) clicked FileLoad(2):
+            use load_save_slot(number=2)
+        hotspot (52, 469, 753, 158) clicked FileLoad(3):
+            use load_save_slot(number=3)
+       
+        hotspot (926, 430, 158, 161) action Return() activate_sound "sounds/click.mp3" hover_sound "sounds/hover.mp3"
 
+screen load_save_slot:
+    
+    $ slot_str = FileSlotName(number, 12)
+    $ time_str = FileTime(number, empty=("Slot Available"))
+
+    add FileScreenshot(number) xpos 550 ypos 15
+
+    text slot_str xcenter 100 ycenter 50 size 60 color "#ffffff" outlines [ (3,"#000000") ]    
+    text time_str xcenter 110 ycenter 120 size 24 color "#ffffff" outlines [ (2,"#000000") ]
+    
+    key "save_delete" action FileDelete(number)
+    
+init -2 python:
+    
+    config.thumbnail_width = 183
+    config.thumbnail_height = 133
 
 ##############################################################################
 # Preferences
@@ -345,132 +399,40 @@ screen preferences():
 
     tag menu
 
+
     # Include the navigation.
     use navigation
+    
+    imagemap:
+        ground "images/menu/config_ground.png"
+        idle "images/menu/config_idle.png"
+        hover "images/menu/config_hover.png"
+        selected_idle "images/menu/config_selected_idle.png" 
+        selected_hover "images/menu/config_selected_hover.png" 
+        alpha True
+        
+        hotspot (1099, 139, 159, 159) action ShowMenu("load")
+        hotspot (928, 89, 152, 150) action ShowMenu("save")
+        hotspot (1099, 487, 159, 155) action Quit()
+        hotspot (1090, 311, 184, 161) action MainMenu()
+        hotspot (926, 430, 158, 161) action Return()
+        hotspot (78, 442, 303, 224) action Preference("display", "fullscreen")
+        hotspot (472, 440, 306, 226) action Preference("display", "window")
+        
+        bar pos (113, 136) value Preference("text speed") style "pref_slider"
+        bar pos (112, 246) value Preference("sound volume") style "pref_slider"
+        bar pos (112, 358) value Preference("music volume") style "pref_slider"
 
-    # Put the navigation columns in a three-wide grid.
-    grid 3 1:
-        style_group "prefs"
-        xfill True
+init -2 python:
+    style.pref_slider.left_bar = "images/menu/left-bar.png"
+    style.pref_slider.right_bar = "images/menu/right-bar.png"
 
-        # The left column.
-        vbox:
-            frame:
-                style_group "pref"
-                has vbox
+    style.pref_slider.xmaximum = 635
+    style.pref_slider.ymaximum = 31
 
-                label _("Display")
-                textbutton _("Window") action Preference("display", "window")
-                textbutton _("Fullscreen") action Preference("display", "fullscreen")
-
-            frame:
-                style_group "pref"
-                has vbox
-
-                label _("Transitions")
-                textbutton _("All") action Preference("transitions", "all")
-                textbutton _("None") action Preference("transitions", "none")
-
-            frame:
-                style_group "pref"
-                has vbox
-
-                label _("Text Speed")
-                bar value Preference("text speed")
-
-            frame:
-                style_group "pref"
-                has vbox
-
-                textbutton _("Joystick...") action Preference("joystick")
-
-
-        vbox:
-            frame:
-                style_group "pref"
-                has vbox
-
-                label _("Skip")
-                textbutton _("Seen Messages") action Preference("skip", "seen")
-                textbutton _("All Messages") action Preference("skip", "all")
-
-            frame:
-                style_group "pref"
-                has vbox
-
-                textbutton _("Begin Skipping") action Skip()
-
-            frame:
-                style_group "pref"
-                has vbox
-
-                label _("After Choices")
-                textbutton _("Stop Skipping") action Preference("after choices", "stop")
-                textbutton _("Keep Skipping") action Preference("after choices", "skip")
-
-            frame:
-                style_group "pref"
-                has vbox
-
-                label _("Auto-Forward Time")
-                bar value Preference("auto-forward time")
-
-                if config.has_voice:
-                    textbutton _("Wait for Voice") action Preference("wait for voice", "toggle")
-
-        vbox:
-            frame:
-                style_group "pref"
-                has vbox
-
-                label _("Music Volume")
-                bar value Preference("music volume")
-
-            frame:
-                style_group "pref"
-                has vbox
-
-                label _("Sound Volume")
-                bar value Preference("sound volume")
-
-                if config.sample_sound:
-                    textbutton _("Test"):
-                        action Play("sound", config.sample_sound)
-                        style "soundtest_button"
-
-            if config.has_voice:
-                frame:
-                    style_group "pref"
-                    has vbox
-
-                    label _("Voice Volume")
-                    bar value Preference("voice volume")
-
-                    textbutton _("Voice Sustain") action Preference("voice sustain", "toggle")
-                    if config.sample_voice:
-                        textbutton _("Test"):
-                            action Play("voice", config.sample_voice)
-                            style "soundtest_button"
-
-init -2:
-    style pref_frame:
-        xfill True
-        xmargin 5
-        top_margin 5
-
-    style pref_vbox:
-        xfill True
-
-    style pref_button:
-        size_group "pref"
-        xalign 1.0
-
-    style pref_slider:
-        xmaximum 192
-        xalign 1.0
-
-    style soundtest_button:
-        xalign 1.0
+    style.pref_slider.thumb = "images/menu/thumb.png"
+    style.pref_slider.thumb_offset = 5
+    style.pref_slider.thumb_shadow = None
 
 
 ##############################################################################
@@ -558,5 +520,5 @@ init -2:
         hover_color "#ccc"
         selected_idle_color "#cc08"
         selected_hover_color "#cc0"
-        insensitive_color "#4448"
+insensitive_color "#4448"
 
