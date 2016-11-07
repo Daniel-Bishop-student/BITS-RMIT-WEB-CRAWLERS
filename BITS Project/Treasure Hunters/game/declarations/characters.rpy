@@ -15,13 +15,4 @@ label character_declarations:
 
     define slim = Character('Slim')
 
-    
-    ##image locations##
-    
-    image harry happy ="scene1/harry happy.png"
-    image benji neutral ="scene1/benji-single.png"
-    image penny neutral ="scene1/penny-single.png"
-    image jax = "scene1/jax.png"
-
-
     return
