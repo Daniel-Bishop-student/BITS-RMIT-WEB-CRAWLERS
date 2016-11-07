@@ -3,7 +3,7 @@ label scene3a:
     scene scene3a
     with fade
 
-    play music "music/scene3aFX.mp3" fadeout 2.0 fadein 5.0
+    play music "FX/scene3aFX.mp3" fadeout 2.0 fadein 5.0
 
     show harry
     show benji at right
