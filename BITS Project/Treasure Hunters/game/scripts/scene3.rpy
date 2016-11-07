@@ -5,7 +5,7 @@ label scene3:
     scene scene3
     with fade
 
-    play music "music/scene3FX.mp3" fadeout 0.5 fadein 5.0 
+    play music "music/scene3FXlong.mp3" fadeout 0.5 fadein 5.0 
 
     show harry
     show benji at right
