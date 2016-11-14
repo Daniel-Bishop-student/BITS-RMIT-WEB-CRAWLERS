@@ -15,4 +15,6 @@ label character_declarations:
 
     define slim = Character('Slim')
 
+    define killsalot = Character('Killsalot')
+
     return
