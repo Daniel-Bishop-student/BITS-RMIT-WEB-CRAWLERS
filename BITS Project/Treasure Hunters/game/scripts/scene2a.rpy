@@ -4,9 +4,9 @@ label scene2a:
 
     scene scene2a
 
-    show harry
-    show benji at right
-    show penny at left
+    show harry surpised
+    show benji surprised at right
+    show penny mad at left
     show jax at Position(xpos =100)
 
     #show # harry surprised

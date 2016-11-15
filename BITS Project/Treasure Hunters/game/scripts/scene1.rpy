@@ -4,9 +4,9 @@ label scene1:
 
     scene scene1
 
-    show harry
-    show benji at right
-    show penny at left
+    show harry happy
+    show benji happy at right
+    show penny happy at left
     show jax at Position(xpos =100) 
     
     # Dialogue for scene1
