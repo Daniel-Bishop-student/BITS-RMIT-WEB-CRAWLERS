@@ -17,4 +17,8 @@ label character_declarations:
 
     define killsalot = Character('Killsalot')
 
+    define soldier = Character ('Soldier')
+
+    define xeena = Character ('Xeena')
+
     return

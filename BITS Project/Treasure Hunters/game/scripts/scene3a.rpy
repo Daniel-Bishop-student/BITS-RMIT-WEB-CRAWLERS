@@ -30,11 +30,19 @@ label scene3a:
 
     harry "What kind of power?"
 
-    slim "Great powers of healing and growth. It fertilises our soil and purifies our water and regulates our seasons and much more. ” (Slim) continues: “One day a cloud descended upon Brenner. This cloud bore fire and the noise of thunder only much louder. Soldiers descended from the cloud as an endless waterfall. The soldiers ran through the Ora attacking the protectors"
+    slim "Great powers of healing and growth. It fertilises our soil and purifies our water and regulates our seasons and much more. "
+    
+    slim "One day a cloud descended upon Brenner. This cloud bore fire and the noise of thunder only much louder. Soldiers descended from the cloud as an endless waterfall. "
+
+    slim "The soldiers ran through the Ora attacking the protectors"
 
     penny "The Protectors?"
 
-    slim "Those assigned the task of protecting the Ora and maintaining the rate of kia extraction. The Ora is generous but too much kia extraction forces an imbalance in our eco-system and makes soil acidic so nothing will grow, our water turns to sludge and becomes infected with bacteria, the sky turns the color of blood as you see above you and the air a dusty barely breathable haze."
+    slim "Those assigned the task of protecting the Ora and maintaining the rate of kia extraction. "
+
+    slim "The Ora is generous but too much kia extraction forces an imbalance in our eco-system and makes soil acidic so nothing will grow," 
+    
+    slim "our water turns to sludge and becomes infected with bacteria, the sky turns the color of blood as you see above you and the air a dusty barely breathable haze."
 
     harry "How did this happen?"
 
@@ -50,7 +58,13 @@ label scene3a:
 
     harry "What’s all this got to do with me or us?"
 
-    slim "Some of the village people fearing the worst, asked the Sherpa or witch doctor to open a portal. These portals had been opened before but no one was sure where they went or if they were even safe. Facing almost certain death a lucky few managed to send their loved ones through the portal, your great grandmother was one of those sent through the portal. And it was written by the prophets that 65 moon cycles from the day of the fire cloud he would return and right what was wronged. Today marks exactly 65 moon cycles since the fire cloud and here you are"
+    slim "Some of the village people fearing the worst, asked the Sherpa or witch doctor to open a portal. "
+
+    slim "These portals had been opened before but no one was sure where they went or if they were even safe. Facing almost certain death a lucky few managed to send their loved ones through the portal,"
+    
+    slim "your great grandmother was one of those sent through the portal. And it was written by the prophets that 65 moon cycles from the day of the fire cloud he would return and right what was wronged." 
+
+    slim "Today marks exactly 65 moon cycles since the fire cloud and here you are"
 
     penny "I still don’t understand! , wait unless.....Harry your phone"
 

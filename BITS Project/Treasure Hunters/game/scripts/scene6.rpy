@@ -58,7 +58,7 @@ label scene6:
 label choice3:
     
     "You didn’t actually think that would work do you? Killsalot was lying through his crooked black teeth. He kills Slim and Jax, forces Penny to marry him and turns Benji and you into live punching bags for his troops. Then he uses the transporter to terrorise the Universe, enslaving all that get in his way….. Bad choice and your adventure ends here."
-
+    return
 label choice4:
     "You smash the phone knowing your friends may die there in front of you but that the sacrifice must be made in order to save the Universe. The transporter, sensing your despair and anger, starts to glow and…"
 
