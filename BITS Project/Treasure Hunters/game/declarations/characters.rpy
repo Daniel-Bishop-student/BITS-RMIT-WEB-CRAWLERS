@@ -15,4 +15,10 @@ label character_declarations:
 
     define slim = Character('Slim')
 
+    define killsalot = Character('Killsalot')
+
+    define soldier = Character ('Soldier')
+
+    define xeena = Character ('Xeena')
+
     return
