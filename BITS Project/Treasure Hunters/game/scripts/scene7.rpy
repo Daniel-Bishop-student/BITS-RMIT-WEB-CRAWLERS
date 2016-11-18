@@ -21,17 +21,18 @@ label scene7a:
     # Dialogue for scene7
     
     ######Scene 7a#######
-    "Many soldiers rush to Harry, Slim and the gang."
-    benji "Harry your phone, it’s glowing again"
-    "A big flash and the gang including jax are now in battle suits with a special weapon each"
-    penny "Let's get it on!"
+    soldiers gang "Many soldiers rush to Harry, Slim and the gang..."
+    benji excited "Harry your phone, it’s glowing again"
+    jax bark "Woof Woof"
+    all_characters surprised "A big flash and the gang including jax are now in battle suits with a special weapon each"
+    penny mad "Let's get it on!"
 
     #####Battle Scene - kids fighting soldiers 7b? ###############
-    "Near the end of the battle"
-    benji "Harry there’s too many"
-    slim "He’s right. You must retreat Harry. You must not let the transporter fall into Killsalot’s hands "
-    penny "Use the transporter Harry! Get us out of here!"
-    slim "No! Remember, the Rebellion is nearby. If we can find them, they may be able to help us."
+    all_characters surprised "{i}Near the end of the battle{/i}"
+    benji confused "Harry there’s too many"
+    slim mad "He’s right. You must retreat Harry. You must not let the transporter fall into Killsalot’s hands "
+    penny sad "Use the transporter Harry! Get us out of here!"
+    slim proud "No! Remember, the Rebellion is nearby. If we can find them, they may be able to help us."
 
 
 
@@ -39,7 +40,7 @@ label scene7a:
 
 
     #######CHOICE SECTION#########
-
+    choice_character choice "Make your choice"
     
     menu:
         "You don’t need any help, and only cowards run away. Stay and fight!":
@@ -59,7 +60,7 @@ label choice5:
     "There is a lull in the fighting as Killsalots men regroup"
 
 
-    harry "NO! Here is where we stand, here is where we fight back. If we run now, we will never stop running."
+    harry mad "NO! Here is where we stand, here is where we fight back. If we run now, we will never stop running."
 
 
     slim "We must do what the Protector needs us to do. Stand together. Stand and fight!"

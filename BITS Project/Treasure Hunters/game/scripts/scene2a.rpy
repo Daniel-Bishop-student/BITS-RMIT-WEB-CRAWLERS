@@ -4,11 +4,10 @@ label scene2a:
 
     scene scene2a
 
-    show harry surpised
-    show benji surprised at right
-    show penny mad at left
+    show harry
+    show benji at right
+    show penny at left
     show jax at Position(xpos =100)
-    show choice
 
     #show # harry surprised
     #show # penny surprised at Position right
@@ -19,15 +18,17 @@ label scene2a:
 
     # Dialogue for scene2a
 
-    penny "Harry! I think your new phone is ringing"
+    penny surprised "Harry! I think your new phone is ringing..."
+    # http://www.flashkit.com/soundfx/Communication/Telephones/Mr-Steven_B-7370/index.php
+    play sound "FX/Mr-Steven_B-7370_hifi.mp3"
 
-    choice "What do you do? Try to save your group from getting crushed by the tram or answer the phone? Continue to make your choice...."
+    choice_character choice "What do you do? Try to save your group from getting crushed by the tram or answer the phone?"
 
     menu:
         "Ignore the phone and try to get your friends out of the way of the tram?":
             jump choice1
 
-        "​Ignore the onrushing tram and answer the phone: Result - You answer the phone and it starts to glow":
+        "​Ignore the onrushing tram and answer the phone?":
             jump scene3
 
 label choice1:

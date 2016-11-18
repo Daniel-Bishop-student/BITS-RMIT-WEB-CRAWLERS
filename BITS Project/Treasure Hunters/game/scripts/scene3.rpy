@@ -5,11 +5,11 @@ label scene3:
     scene scene3
     with fade
 
-    play music "FX/scene3FX.mp3" fadeout 0.5 fadein 5.0 
+    play sound "FX/scene3FX.mp3" fadeout 0.5 fadein 5.0 
 
-    show harry surprised
-    show benji surprised at right
-    show penny happy at left
+    show harry
+    show benji at right
+    show penny at left
     show jax at Position(xpos =100)
 
     #show # harry surprised
@@ -22,23 +22,23 @@ label scene3:
 
     # code for playing music
 
-    benji "Ahh, what happened?"
+    benji excited "Ahh, what happened?"
 
-    "It is the prophecy foretold!"
+    slim proud "It is the prophecy foretold!"
 
-    show slim excited at Position(xpos=0.4, xanchor='center') # fade in
+    #show slim happy at Position ? fade in
 
-    harry "Wah!?"
+    harry confused "What!?"
 
-    penny "Who... Who are you?"
+    penny surprised "Who... Who are you?"
 
-    slim "My name is Slim and who I am is not important ... but who YOU are is!"
+    jax mad "Grr Grr..."
 
-    harry "Us?"
+    slim proud "My name is Slim and who I am is not important... but who YOU are is!"
 
-    slim "No ... YOU Harry, you"
+    harry confused "Us?"
 
-    stop music fadeout 1.0
+    slim "No ... YOU Harry, you!"
 
     jump scene3a
 

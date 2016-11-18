@@ -3,8 +3,6 @@ label scene5:
     scene scene5
     with fade
 
-    
-
     show harry
     show benji at right
     show penny at left
@@ -20,9 +18,11 @@ label scene5:
 
     # Dialogue for scene5
 
-    slim "Ah here look!, kia stone.  The stone will look after the chosen one. Sometimes a traumatic event or emotion can trigger the kia stone to protect the chosen one. Where did you get this phone?"
+    all_characters happy "{b}{i}All standing looking at phone{/i}{/b}"
 
-    harry "My grandmother gave it to me, she must have known "
+    slim excited "Ah here look!, kia stone.  The stone will look after the chosen one. Sometimes a traumatic event or emotion can trigger the kia stone to protect the chosen one. Where did you get this phone?"
+
+    harry excited "My grandmother gave it to me, she must have known!"
 
     jump scene6
     

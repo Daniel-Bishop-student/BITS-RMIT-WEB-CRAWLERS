@@ -1,6 +1,6 @@
 label scene6:
     
-    scene scene6-7a
+    scene scene6
     with fade
 
     
@@ -20,39 +20,40 @@ label scene6:
 
     # Dialogue for scene6
 
-    killsalot " Well what have we got here? "
-    slim "Killsalot, the leader of the soldiers that attacked us "
-    killsalot  "I believe you have something I want "
-    slim "We have nothing" 
-    killsalot "Not you, him!, the transporter, give it to me!"
-    harry "Transporter? What I don’t.."
-    penny "I think he means your phone Harry"
-    benji "He can’t have it or we’ll never get home "
-    slim "He’s right and with the transporter he will be able to terrorise dimensions other than ours and possibly yours Harry"
-    killsalot "The Transporter! Give it to me or it will be taken from you, Soldiers, grab them!"
+    killsalot surprised "Well what have we got here?"
+    slim mad "Killsalot, the leader of the soldiers that attacked us!"
+    killsalot mad1 "I believe you have something I want..."
+    slim mad "We have nothing" 
+    killsalot mad2 "Not you, him!, the transporter, give it to me!"
+    harry confused "Transporter? What I don’t..."
+    penny mad "I think he means your phone Harry"
+    benji surprised "He can’t have it or we’ll never get home "
+    slim mad "He’s right and with the transporter he will be able to terrorise dimensions other than ours and possibly yours Harry"
+    killsalot mad3 "The Transporter! Give it to me or it will be taken from you, Soldiers, grab them!"
 
 
-#The gang turns to run but the soldiers grab the everyone except for Harry who makes it to a nearby cave?? and hides.
+    soldiers gang "{i}The gang turns to run but the soldiers grab the everyone except for Harry who makes it to a nearby cave?? and hides.{/i}"
 
 
-    killsalot "Come out with that transporter boy, or I will kill your friends…. Slowly and make you watch"
+    killsalot mad1 "Come out with that transporter boy, or I will kill your friends…. Slowly and make you watch"
 
 
-#(Harry) Reveals himself holding up the transporter in one hand:
-    harry "Let them go, Killsalot, or I will smash this transporter"
+    harry mad "{i}{b}(Harry) Reveals himself holding up the transporter in one hand:{/b}{/i}"
+    harry mad " Let them go, Killsalot, or I will smash this transporter"
 
 
-    killsalot "Ahh, such bravery, such sacrifice. You have impressed me, boy. Give to me the transporter and, as I am nothing if not gracious, I will release you and your friends and you will be allowed to leave this place without any harm coming to you. You have my word"
+    killsalot mad2 "Ahh, such bravery, such sacrifice. You have impressed me, boy. Give to me the transporter and, as I am nothing if not gracious, I will release you and your friends and you will be allowed to leave this place without any harm coming to you. You have my word"
     
 
     #######CHOICE SECTION#########
 
+    choice_character choice "Choose wisely!"
     
     menu:
-        "Give the transporter to Killsalot and save your friends.":
+        "Give the transporter to Killsalot and save your friends!":
             jump choice3
 
-        "​Smash the phone.":
+        "​Smash the phone!":
             jump choice4
 
 label choice3:

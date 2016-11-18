@@ -95,7 +95,7 @@ init -1 python hide:
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
 
-    # style.window.left_margin = 6
+    style.window.left_margin = 120
     # style.window.right_margin = 6
     # style.window.top_margin = 6
     # style.window.bottom_margin = 6
@@ -103,15 +103,15 @@ init -1 python hide:
     ## Padding is space inside the window, where the background is
     ## drawn.
 
-    style.window.left_padding = 275
+    style.window.left_padding =140
     # style.window.right_padding = 6
-    # style.window.top_padding = 6
+    style.window.top_padding = 50
     # style.window.bottom_padding = 6
 
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    # style.window.yminimum = 250
+    style.window.yminimum = 210
 
 
     #########################################
