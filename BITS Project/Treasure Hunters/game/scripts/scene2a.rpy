@@ -4,10 +4,11 @@ label scene2a:
 
     scene scene2a
 
-    show harry
-    show benji at right
-    show penny at left
+    show harry surpised
+    show benji surprised at right
+    show penny mad at left
     show jax at Position(xpos =100)
+    show choice
 
     #show # harry surprised
     #show # penny surprised at Position right
@@ -20,7 +21,7 @@ label scene2a:
 
     penny "Harry! I think your new phone is ringing"
 
-    "What do you do? Try to save your group from getting crushed by the tram or answer the phone?"
+    choice "What do you do? Try to save your group from getting crushed by the tram or answer the phone? Continue to make your choice...."
 
     menu:
         "Ignore the phone and try to get your friends out of the way of the tram?":
