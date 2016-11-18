@@ -8,10 +8,12 @@ label scene1:
     show benji happy at right
     show penny happy at left
     show jax at Position(xpos =100) 
+    show grandma
+    show group
     
     # Dialogue for scene1
 
-    "Happy Birthday dear Harry, happy birthday to you"
+    group "Happy Birthday dear Harry, happy birthday to you"
 
     grandma "Open your present Harry"
 

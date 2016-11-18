@@ -26,7 +26,7 @@ label scene2:
     #Big Noise - Train derailing
 
 
-    "ah, what?"
+    group "ah, what?"
 
 
     jump scene2a

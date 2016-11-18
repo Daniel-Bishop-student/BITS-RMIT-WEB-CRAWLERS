@@ -19,4 +19,8 @@ label character_declarations:
 
     define xeena = Character('Xeena', image = "xeena")
 
+    define group = Character('Group', image = "group")
+
+    define choice = Character('Choice', image = "choice")
+
     return
