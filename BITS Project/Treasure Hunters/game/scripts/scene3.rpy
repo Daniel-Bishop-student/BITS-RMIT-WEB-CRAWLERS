@@ -38,6 +38,8 @@ label scene3:
 
     slim "No ... YOU Harry, you"
 
+    stop music fadeout 1.0
+
     jump scene3a
 
     return
