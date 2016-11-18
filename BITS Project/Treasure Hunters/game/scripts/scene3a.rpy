@@ -5,15 +5,8 @@ label scene3a:
 
     play music "FX/scene3aFX.mp3" fadeout 2.0 fadein 1.0
 
-    show harry excited
-    show benji excited at right
-    show penny surprised at left
-    show slim happy
-    show jax at Position(xpos =100)
- 
-    # fade all characters in and make transperent?
-
-    # Dialogue for scene3a
+    
+ # Dialogue for scene3a
 
     slim "Brenner-456 used to be warm, bright and full of life. There was plenty of food, happiness and community spirit. Kids ran free in the fields without worry and people worked together to build, teach and enjoy life"
 
@@ -34,16 +27,16 @@ label scene3a:
 
     slim "Those assigned the task of protecting the Ora and maintaining the rate of kia extraction. The Ora is generous but too much kia extraction forces an imbalance in our eco-system and makes soil acidic so nothing will grow."
 
+#Scene transition
+
     scene scene3
     with fade
 
     play music "FX/scene3FX.mp3" fadeout 0.5 fadein 1.0
 
-    show harry surprised
-    show benji mad at right
-    show penny sad at left
-    show slim mad
-    show jax at Position(xpos =100)
+
+
+#Dialogue continued
 
     slim "Our water turns to sludge and becomes infected with bacteria, the sky turns the color of blood as you see above you and the air a dusty barely breathable haze."
 
@@ -64,12 +57,7 @@ label scene3a:
 
     play music "FX/scene3aFX.mp3" fadeout 2.0 fadein 1.0
 
-    show harry excited
-    show benji excited at right
-    show penny surprised at left
-    show slim proud
-    show jax at Position(xpos =100)
-
+    
     harry "What’s all this got to do with me or us?"
 
     slim "Some of the village people fearing the worst, asked the Sherpa or witch doctor to open a portal. These portals had been opened before but no one was sure where they went or if they were even safe."

@@ -4,14 +4,6 @@ label scene7b:
     with fade
 
     
-
-    show harry
-    show benji at right
-    show penny at left
-    show jax at Position(xpos =100)
-    show killsalot at Position(xpos=600)
-
-
     ###Ending Scenario 2
 label choice6:
     "The kids use the transporter to escape but Killsalot burns some villages after they leave as punishment for their rebellion. Making the kids mad and vow to destroy Killsalot in future episodes."
@@ -51,6 +43,6 @@ label choice6:
     slim "And so it begins"
 
 ##Jump to credits####
-   # jump credits
+    jump credits
 ##The end of scenario 2
     return

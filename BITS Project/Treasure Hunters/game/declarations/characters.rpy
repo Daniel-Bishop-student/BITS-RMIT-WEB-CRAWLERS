@@ -23,4 +23,7 @@ label character_declarations:
 
     define choice = Character('Choice', image = "choice")
 
+    define soldiers = Character('Soldiers', image="soldiers_side")
+   
+
     return

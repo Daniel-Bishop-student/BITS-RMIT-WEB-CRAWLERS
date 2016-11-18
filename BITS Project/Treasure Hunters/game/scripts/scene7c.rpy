@@ -5,21 +5,7 @@ label choice7:
     with fade
 
     
-
-    show harry
-    show benji at right
-    show penny at left
-    show jax at Position(xpos =100)
-    show killsalot at Position(xpos=600)
-
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # benji surprised at Position left
-    #show jax at Position (xpos = 100)
-    #show slim happy at Position ? 
-    # fade all characters in and make transperent?
-
-    # Dialogue for ending scenario 3
+# Dialogue for ending scenario 3
 
     "The Amazon rebellion shows up last minute and helps them escape and all return to their headquarters."
 

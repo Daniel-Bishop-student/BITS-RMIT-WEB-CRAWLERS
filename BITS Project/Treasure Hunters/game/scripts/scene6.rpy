@@ -3,22 +3,8 @@ label scene6:
     scene scene6-7a
     with fade
 
-    
 
-    show harry
-    show benji at right
-    show penny at left
-    show jax at Position(xpos =100)
-    show killsalot at Position(xpos=600)
-
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # benji surprised at Position left
-    #show jax at Position (xpos = 100)
-    #show slim happy at Position ? 
-    # fade all characters in and make transperent?
-
-    # Dialogue for scene6
+# Dialogue for scene6
 
     killsalot " Well what have we got here? "
     slim "Killsalot, the leader of the soldiers that attacked us "

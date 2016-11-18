@@ -7,17 +7,7 @@ label scene3:
 
     play music "FX/scene3FX.mp3" fadeout 0.5 fadein 5.0 
 
-    show harry surprised
-    show benji surprised at right
-    show penny happy at left
-    show jax at Position(xpos =100)
-
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # benji surprised at Position left
-    #show jax at Position (xpos = 100)
     
-
     # Dialogue for scene 3
 
     # code for playing music
@@ -26,7 +16,7 @@ label scene3:
 
     "It is the prophecy foretold!"
 
-    show slim excited at Position(xpos=0.4, xanchor='center') # fade in
+    
 
     harry "Wah!?"
 

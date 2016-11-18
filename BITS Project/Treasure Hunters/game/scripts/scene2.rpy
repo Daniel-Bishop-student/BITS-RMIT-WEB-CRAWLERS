@@ -4,11 +4,6 @@ label scene2:
 
     scene scene2
 
-    show harry happy
-    show benji happy at Position(xpos=0.6, xanchor='center', ypos=1.08,
-                   yanchor='bottom')
-    show penny happy at Position(xpos=0.4, xanchor='center')
-    show jax at Position(xpos =0.7) 
     
     # These display lines of dialogue.
 
@@ -30,6 +25,6 @@ label scene2:
 
 
     jump scene2a
-    # This ends the game.
+    
 
     return

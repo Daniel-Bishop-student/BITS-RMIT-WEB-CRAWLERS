@@ -4,21 +4,7 @@ label scene7a:
     with fade
 
     
-
-    show harry
-    show benji at right
-    show penny at left
-    show jax at Position(xpos =100)
-    show killsalot at Position(xpos=600)
-
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # benji surprised at Position left
-    #show jax at Position (xpos = 100)
-    #show slim happy at Position ? 
-    # fade all characters in and make transperent?
-
-    # Dialogue for scene7
+# Dialogue for scene7
     
     ######Scene 7a#######
     "Many soldiers rush to Harry, Slim and the gang."
@@ -96,12 +82,8 @@ label choice5:
 
 
     "You fought bravely, you fought well, and many of Killsalots soldiers were sent screaming to their graves. But 3 kids, an old man and a dog can only defeat so many crazed, highly trained killers. You have been defeated. It was all very dramatic and songs of your tragic, valiant ending start being sung in drinking halls throughout the Universe … Until Killsalot uses the transporter he took from your lifeless hands to brutally conquer the galaxy and burn those drinking halls to the ground…. You should have run away to fight another day. Your adventure ends here."
-#Jump to credits after credit scene is created#
-   # jump credits
 
+    jump credits
 
-    
-    
-    
 
     return 

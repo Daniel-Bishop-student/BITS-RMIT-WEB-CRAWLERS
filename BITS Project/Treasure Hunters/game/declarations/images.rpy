@@ -22,6 +22,8 @@ label image_declarations:
     # Character SIDE images
     ########################
 
+    image side soldiers_side gang =  "images/characters/side_images/side_image_soldiers_03.png"
+    image side all_side surprised = "images/characters/side_images/side_image_all_surprised_03.png"
     ##########
     # Benji
     ##########

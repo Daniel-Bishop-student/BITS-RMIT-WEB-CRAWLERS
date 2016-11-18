@@ -4,17 +4,6 @@ label scene2a:
 
     scene scene2a
 
-    show harry surpised
-    show benji surprised at right
-    show penny mad at left
-    show jax at Position(xpos =100)
-    show choice
-
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # Benji surprised at Position left
-    #show jax at Position (xpos = 100)
-
     # code for playing music
 
     # Dialogue for scene2a
@@ -33,5 +22,7 @@ label scene2a:
 label choice1:
     
     "As quick as you think you are, the tram is quicker. It runs straight through the middle of all of you, tearing flesh and slicing limbs, crushing you with it’s heavy metal bulk. You, and your group are killed. Your adventure ends here. "
-
+    
+    jump credits
+    
     return
