@@ -3,49 +3,78 @@ label scene6:
     scene scene6-7a
     with fade
 
+    $ renpy.music.set_volume(0.6, 0, channel='music')
+    $ renpy.music.set_volume(0.3, 0, channel='sound')
+
+    play music "FX/scene3FXwind.mp3" fadeout 0.5 fadein 6.0 
+
+    play sound "FX/scene6_Suspense.mp3"
     
+    show harry mad at Position(xpos=0.5, ypos=0.95)
+    show benji mad at Position(xpos=0.25, ypos=0.95)
+    show penny mad at Position(xpos=0.65, ypos=0.95)
+    show jax mad at Position(xpos =0.75)
+    show slim mad at Position(xpos=0.37, ypos=0.95)
+    show killsalot mad1 at Position(xpos=0.90, ypos=0.95)
 
-    show harry
-    show benji at right
-    show penny at left
-    show jax at Position(xpos =100)
-    show killsalot at Position(xpos=600)
-
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # benji surprised at Position left
-    #show jax at Position (xpos = 100)
-    #show slim happy at Position ? 
-    # fade all characters in and make transperent?
 
     # Dialogue for scene6
 
-    killsalot " Well what have we got here? "
-    slim "Killsalot, the leader of the soldiers that attacked us "
-    killsalot  "I believe you have something I want "
-    slim "We have nothing" 
-    killsalot "Not you, him!, the transporter, give it to me!"
+    killsalot "Well, well, well. What have we got here? "
+
+    slim "Its Killsalot! This is the evil leader of the soldiers that attacked our world!"
+
+    killsalot  "I believe you have something I want."
+
+    slim "We have nothing!" 
+
+    killsalot "Not you, him! The transporter, give it to me!"
+
     harry "Transporter? What I don’t.."
-    penny "I think he means your phone Harry"
-    benji "He can’t have it or we’ll never get home "
-    slim "He’s right and with the transporter he will be able to terrorise dimensions other than ours and possibly yours Harry"
-    killsalot "The Transporter! Give it to me or it will be taken from you, Soldiers, grab them!"
+
+    penny "I think he means your phone Harry..."
+
+    benji "He can’t have it or we’ll never get home!"
+
+    slim "He’s right and with the transporter he will be able to terrorise dimensions other than our own and possibly yours Harry."
+    
+    killsalot "The Transporter! Give it to me or it will be taken from you. Soldiers, grab them!"
+
+    show penny mad at Position(xpos=0.42, ypos=0.95)
+    with dissolve
+    show jax mad at Position(xpos =0.30)
+    with dissolve
+    show killsalot mad2 at Position(xpos=0.90, ypos=0.95)
+    show soldiers at Position(xpos=0.70)
+    with dissolve 
 
 
-#The gang turns to run but the soldiers grab the everyone except for Harry who makes it to a nearby cave?? and hides.
+    group surprised "You turn to run but the soldiers grab everyone but you manage to get away"
+
+    show harry mad at Position(xpos=0.25, ypos=0.95)
+    show benji mad at Position(xpos=1.0, ypos=0.95)
+    show penny mad at Position(xpos=1.0, ypos=0.95)
+    show jax mad at Position(xpos =1.0)
+    show slim mad at Position(xpos=1.0, ypos=0.95)
 
 
-    killsalot "Come out with that transporter boy, or I will kill your friends…. Slowly and make you watch"
+    killsalot "Come out with that transporter boy, or I will kill your friends…. Slowly and make you watch."
 
 
 #(Harry) Reveals himself holding up the transporter in one hand:
-    harry "Let them go, Killsalot, or I will smash this transporter"
+    harry "Let them go, Killsalot, or I will smash this transporter!"
 
 
-    killsalot "Ahh, such bravery, such sacrifice. You have impressed me, boy. Give to me the transporter and, as I am nothing if not gracious, I will release you and your friends and you will be allowed to leave this place without any harm coming to you. You have my word"
+    killsalot "Ahh, such bravery, such sacrifice. You have impressed me, boy."
+
+    killsalot "Give to me the transporter and, as I am nothing if not gracious, I will release you and your friends"
+
+    killsalot "You will be allowed to leave this place without any harm coming to you. You have my word."
     
 
     #######CHOICE SECTION#########
+
+    choice "Killsalot wants you to give him your phone. What will you do? Continue to make your choice."
 
     
     menu:
@@ -56,13 +85,22 @@ label scene6:
             jump choice4
 
 label choice3:
+    play sound "FX/scene6_Evil_Laugh.mp3"
     
-    "You didn’t actually think that would work do you? Killsalot was lying through his crooked black teeth. He kills Slim and Jax, forces Penny to marry him and turns Benji and you into live punching bags for his troops. Then he uses the transporter to terrorise the Universe, enslaving all that get in his way….. Bad choice and your adventure ends here."
+    "You didn’t actually think that would work do you?"
+    "Killsalot was lying through his crooked black teeth." 
+    "He kills Slim and Jax, forces Penny to marry him and turns Benji and you into live punching bags for his soldiers."
+    "Then he uses the transporter to terrorise the Universe, enslaving all that get in his way... Bad choice and your adventure ends here."
+
+    stop sound
+
     return
+    
 label choice4:
-    "You smash the phone knowing your friends may die there in front of you but that the sacrifice must be made in order to save the Universe. The transporter, sensing your despair and anger, starts to glow and…"
+    "You smash the phone knowing your friends may die there in front of you but that the sacrifice must be made in order to save the Universe. The transporter, sensing your despair and anger, starts to glow and..."
+
+    stop music fadeout 1.0
 
     jump scene7a
     
-
     return 

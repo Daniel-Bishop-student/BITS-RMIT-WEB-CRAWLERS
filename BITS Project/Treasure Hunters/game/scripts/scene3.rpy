@@ -5,18 +5,18 @@ label scene3:
     scene scene3
     with fade
 
-    play music "FX/scene3FX.mp3" fadeout 0.5 fadein 5.0 
+    $ renpy.music.set_volume(0.8, 0, channel='music')
+    $ renpy.music.set_volume(0.3, 0, channel='sound')
 
-    show harry surprised
-    show benji surprised at right
-    show penny happy at left
-    show jax at Position(xpos =100)
+    play sound "FX/transporter.mp3"
 
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # benji surprised at Position left
-    #show jax at Position (xpos = 100)
-    
+    play music "FX/scene3FXwind.mp3" fadeout 0.5 fadein 5.0 
+
+    show harry surprised at Position(xpos=0.5, ypos=0.95)
+    show benji surprised at Position(xpos=0.25, ypos=0.95)
+    show penny surprised at Position(xpos=0.70, ypos=0.95)
+    show jax at right
+
 
     # Dialogue for scene 3
 
@@ -24,19 +24,26 @@ label scene3:
 
     benji "Ahh, what happened?"
 
-    "It is the prophecy foretold!"
+    play sound "FX/scene3_slim_enigma.mp3"
 
-    show slim excited at Position(xpos=0.4, xanchor='center') # fade in
+    "IT IS THE PROPHECY FORETOLD!"
+
+    show slim excited at Position(xpos=0.37, ypos=0.95)
+    with dissolve
 
     harry "Wah!?"
 
+    stop sound
+
     penny "Who... Who are you?"
+
+    jax mad "Grr Grr..."
 
     slim "My name is Slim and who I am is not important ... but who YOU are is!"
 
     harry "Us?"
 
-    slim "No ... YOU Harry, you"
+    slim "No ... YOU Harry, you."
 
     stop music fadeout 1.0
 
