@@ -21,6 +21,8 @@ label character_declarations:
 
     define group = Character('Group', image = "group")
 
+    define soldiers = Character('Soldiers', image = "soldiers")
+
     define choice = Character('Choice', image = "choice")
 
     return
