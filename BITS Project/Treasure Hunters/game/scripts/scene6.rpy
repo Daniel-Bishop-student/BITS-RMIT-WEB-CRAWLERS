@@ -5,18 +5,13 @@ label scene6:
 
     
 
-    show harry
-    show benji at right
-    show penny at left
-    show jax at Position(xpos =100)
-    show killsalot at Position(xpos=600)
-
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # benji surprised at Position left
-    #show jax at Position (xpos = 100)
-    #show slim happy at Position ? 
-    # fade all characters in and make transperent?
+    show harry mad
+    show benji mad at right
+    show penny mad at left
+    show jax mad at Position(xpos =100)
+    show slim mad
+    show killsalot mad1 at Position(xpos=600)
+    show choice
 
     # Dialogue for scene6
 
@@ -46,6 +41,8 @@ label scene6:
     
 
     #######CHOICE SECTION#########
+
+    choice "Killsalot wants you to give him your phone. What will you do? Continue to make your choice"
 
     
     menu:

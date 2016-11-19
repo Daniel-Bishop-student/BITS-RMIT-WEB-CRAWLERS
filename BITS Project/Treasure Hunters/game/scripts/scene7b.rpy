@@ -2,14 +2,14 @@ label scene7b:
     
     scene scene7b1
     with fade
-
     
 
-    show harry
-    show benji at right
-    show penny at left
-    show jax at Position(xpos =100)
-    show killsalot at Position(xpos=600)
+    show harry mad
+    show benji mad at right
+    show penny sad at left
+    show jax mad at Position(xpos =100)
+    show slim proud
+    show killsalot mad2 at Position(xpos=600)
 
 
     ###Ending Scenario 2
@@ -34,9 +34,13 @@ label choice6:
 
 
 #The next day: Other location on brenner 456
+    show slim mad
+
     slim "I have received word that Killsalot burned the village after we left.  There were only a few survivors."
 
     harry "What, why? They had nothing to do with it"
+
+    show penny mad
     
     penny "That bastard!"
     

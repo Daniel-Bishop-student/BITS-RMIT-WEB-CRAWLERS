@@ -5,22 +5,17 @@ label scene7a:
 
     
 
-    show harry
-    show benji at right
-    show penny at left
-    show jax at Position(xpos =100)
+    show harry mad
+    show benji mad at right
+    show penny mad at left
+    show jax mad at Position(xpos =100)
+    show slim mad
     show killsalot at Position(xpos=600)
-
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # benji surprised at Position left
-    #show jax at Position (xpos = 100)
-    #show slim happy at Position ? 
-    # fade all characters in and make transperent?
 
     # Dialogue for scene7
     
     ######Scene 7a#######
+    killsalot "Attack them!!"
     "Many soldiers rush to Harry, Slim and the gang."
     benji "Harry your phone, it’s glowing again"
     "A big flash and the gang including jax are now in battle suits with a special weapon each"
@@ -32,11 +27,6 @@ label scene7a:
     slim "He’s right. You must retreat Harry. You must not let the transporter fall into Killsalot’s hands "
     penny "Use the transporter Harry! Get us out of here!"
     slim "No! Remember, the Rebellion is nearby. If we can find them, they may be able to help us."
-
-
-
-
-
 
     #######CHOICE SECTION#########
 
@@ -70,9 +60,10 @@ label choice5:
 
     "Suddenly Benji get hit and goes down, swamped by Kilsalots men."
 
-
     harry "Benji!"
     slim "You can’t stop to help!"
+
+    show penny sad 
     penny "But I have to!"
 
 
@@ -99,9 +90,5 @@ label choice5:
 #Jump to credits after credit scene is created#
    # jump credits
 
-
-    
-    
-    
 
     return 

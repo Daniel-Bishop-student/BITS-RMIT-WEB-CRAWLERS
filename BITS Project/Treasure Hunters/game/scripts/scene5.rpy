@@ -5,18 +5,12 @@ label scene5:
 
     
 
-    show harry
-    show benji at right
-    show penny at left
+    show harry surprised
+    show benji surprised at right
+    show penny surprised at left
     show jax at Position(xpos =100)
+    show slim excited
  
-
-    #show # harry surprised
-    #show # penny surprised at Position right
-    #show # benji surprised at Position left
-    #show jax at Position (xpos = 100)
-    #show slim happy at Position ? 
-    # fade all characters in and make transperent?
 
     # Dialogue for scene5
 
