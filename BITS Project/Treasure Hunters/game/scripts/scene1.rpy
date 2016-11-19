@@ -17,7 +17,27 @@ label scene1:
     
     # Dialogue for scene1
 
+    "Before we start this adventure, you, the reader, get to choose the names of the the three main characters."
+    choice "What would you like them to be"
+
+    $ harry_name = renpy.input("Enter a new name for Harry!")
+    $ harry_name = harry_name.strip()
+    if harry_name == "":
+        $ harry_name = "Harry"
+
+    $ benji_name = renpy.input("Enter a new name for Benji!")
+    $ benji_name = benji_name.strip()
+    if benji_name == "":
+        $ benji_name = "Benji"
+
+    $ penny_name = renpy.input("Enter a new name for Penny!")
+    $ penny_name = penny_name.strip()
+    if penny_name == "":
+        $ penny_name="Penny"
+
     group "Happy Birthday dear Harry, happy birthday to you!"
+
+    jax "Woff Woof"
 
     grandma "Open your present Harry..."
 

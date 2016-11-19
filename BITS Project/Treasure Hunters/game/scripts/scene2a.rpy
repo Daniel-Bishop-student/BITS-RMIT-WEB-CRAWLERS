@@ -40,7 +40,9 @@ label choice2:
 
 label choice1:
 
-    play music "FX/scene2a_Train_Hits_Group.mp3" 
+    play music "FX/scene2a_Train_Hits_Group.mp3" noloop
+
+    play sound ["<silence 5.0>", "FX/endingChoice1.mp3"]
     
     "As quick as you think you are, the tram is quicker. It runs straight through the middle of all of you, tearing flesh and slicing limbs, crushing you with it’s heavy metal bulk. You, and your group are killed. Your adventure ends here. "
 

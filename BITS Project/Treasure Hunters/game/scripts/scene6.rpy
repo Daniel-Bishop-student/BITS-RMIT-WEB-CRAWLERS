@@ -3,7 +3,7 @@ label scene6:
     scene scene6-7a
     with fade
 
-    $ renpy.music.set_volume(0.8, 0, channel='music')
+    $ renpy.music.set_volume(0.6, 0, channel='music')
     $ renpy.music.set_volume(0.3, 0, channel='sound')
 
     play music "FX/scene3FXwind.mp3" fadeout 0.5 fadein 6.0 
@@ -13,26 +13,49 @@ label scene6:
     show harry mad at Position(xpos=0.5, ypos=0.95)
     show benji mad at Position(xpos=0.25, ypos=0.95)
     show penny mad at Position(xpos=0.65, ypos=0.95)
-    show jax mad at Position(xpos =75)
+    show jax mad at Position(xpos =0.75)
     show slim mad at Position(xpos=0.37, ypos=0.95)
-    show killsalot mad1 at Position(xpos =100, ypos=0.95)
+    show killsalot mad1 at Position(xpos=0.90, ypos=0.95)
 
 
     # Dialogue for scene6
 
     killsalot "Well, well, well. What have we got here? "
+
     slim "Its Killsalot! This is the evil leader of the soldiers that attacked our world!"
+
     killsalot  "I believe you have something I want."
+
     slim "We have nothing!" 
+
     killsalot "Not you, him! The transporter, give it to me!"
+
     harry "Transporter? What I don’t.."
+
     penny "I think he means your phone Harry..."
+
     benji "He can’t have it or we’ll never get home!"
+
     slim "He’s right and with the transporter he will be able to terrorise dimensions other than our own and possibly yours Harry."
+    
     killsalot "The Transporter! Give it to me or it will be taken from you. Soldiers, grab them!"
 
+    show penny mad at Position(xpos=0.42, ypos=0.95)
+    with dissolve
+    show jax mad at Position(xpos =0.30)
+    with dissolve
+    show killsalot mad2 at Position(xpos=0.90, ypos=0.95)
+    show soldiers at Position(xpos=0.70)
+    with dissolve 
 
-#The gang turns to run but the soldiers grab the everyone except for Harry who makes it to a nearby cave?? and hides.
+
+    group surprised "You turn to run but the soldiers grab everyone but you manage to get away"
+
+    show harry mad at Position(xpos=0.25, ypos=0.95)
+    show benji mad at Position(xpos=1.0, ypos=0.95)
+    show penny mad at Position(xpos=1.0, ypos=0.95)
+    show jax mad at Position(xpos =1.0)
+    show slim mad at Position(xpos=1.0, ypos=0.95)
 
 
     killsalot "Come out with that transporter boy, or I will kill your friends…. Slowly and make you watch."

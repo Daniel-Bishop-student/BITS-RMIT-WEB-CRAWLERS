@@ -4,27 +4,30 @@ label choice7:
     scene scene7c
     with fade
 
-    $ renpy.music.set_volume(0.8, 0, channel='music')
+    $ renpy.music.set_volume(0.6, 0, channel='music')
     $ renpy.music.set_volume(0.3, 0, channel='sound')
 
     play music "FX/scene3FXwind.mp3" fadeout 0.5 fadein 1.0 
 
-    show harry mad
-    show benji mad at right
-    show penny mad at left
-    show jax mad at Position(xpos =100)
-    show slim mad
-    show killsalot mad3 at Position(xpos=600)
-    show soldiers
-    show group 
-
+    show harry mad at Position(xpos=0.5, ypos=0.95)
+    show benji mad at Position(xpos=0.25, ypos=0.95)
+    show penny mad at Position(xpos=0.42, ypos=0.95)
+    show jax mad at Position(xpos =0.30)
+    show slim mad at Position(xpos=0.37, ypos=0.95)
+    show killsalot mad2 at Position(xpos=0.90, ypos=0.95)
+    show soldiers at Position(xpos=0.70)
 
     # Dialogue for ending scenario 3
 
-
     harry "There that thick scrub, run we’ll be able to hide in there!"
 
-    group "All the kids and Slim run into the scrub."
+    group surprised "All the kids and Slim run into the scrub."
+
+    show harry mad at Position(xpos=0.30, ypos=0.95)
+    show benji mad at Position(xpos=0.25, ypos=0.95)
+    show penny mad at Position(xpos=0.20, ypos=0.95)
+    show jax mad at Position(xpos =0.35)
+    show slim mad at Position(xpos=0.37, ypos=0.95)
 
     killsalot "Find them!"
 
@@ -38,6 +41,19 @@ label choice7:
 
     penny "Well if we’re going out, let’s go out fighting.  Who’s with me?"
 
+    "Just then a ship floats overhead and shoots a beam down and scoops Harry and the kids up in it."
+
+    hide harry
+    with dissolve
+    hide benji
+    with dissolve
+    hide penny
+    with dissolve
+    hide jax
+    with dissolve
+    hide slim
+    with dissolve
+
     stop music fadeout 1.0
 
     scene scene7c1
@@ -45,20 +61,26 @@ label choice7:
 
     play music "FX/scene7c_spaceship.mp3"
 
-    show harry surprised
-    show benji excited at right
-    show penny happy at left
-    show jax at Position(xpos =100)
-    show slim proud 
-    show xeena excited
-
-    "Just then a ship floats overhead and shoots a beam down and scoops Harry and the kids up in it."
+    show harry surprised at Position(xpos=0.5, ypos=0.95)
+    with dissolve
+    show benji excited at Position(xpos=0.25, ypos=0.95)
+    with dissolve
+    show penny happy at Position(xpos=0.65, ypos=0.95)
+    with dissolve
+    show jax at Position(xpos =0.75)
+    with dissolve
+    show slim proud at Position(xpos=0.37, ypos=0.95)
+    with dissolve
+    show xeena excited at Position(xpos=.90, ypos=0.95)
+    with dissolve
 
     #Aboard the ship
     
     slim "It’s ok! These people are the Amazon rebellion, an alliance formed from the few that survived the initial invasion"
 
     xeena "Welcome warriors! Any enemy of killsalot is a friend of ours. Rest up. We have a long journey ahead of us."
+
+    jax "Woof, Woof!"
 
     penny "But where are we going? How many of you are there? Why..."
 

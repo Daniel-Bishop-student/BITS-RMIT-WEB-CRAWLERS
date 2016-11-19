@@ -37,6 +37,8 @@ label scene3:
 
     penny "Who... Who are you?"
 
+    jax mad "Grr Grr..."
+
     slim "My name is Slim and who I am is not important ... but who YOU are is!"
 
     harry "Us?"

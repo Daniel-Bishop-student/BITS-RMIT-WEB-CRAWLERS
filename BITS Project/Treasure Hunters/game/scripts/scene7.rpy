@@ -3,37 +3,38 @@ label scene7a:
     scene scene6-7a
     with fade
 
-    $ renpy.music.set_volume(0.8, 0, channel='music')
+    $ renpy.music.set_volume(0.6, 0, channel='music')
     $ renpy.music.set_volume(0.3, 0, channel='sound')
 
     play music "FX/scene3FXwind.mp3" fadeout 0.5 fadein 1.0 
 
-    show harry mad
-    show benji mad at right
-    show penny mad at left
-    show jax mad at Position(xpos =100)
-    show slim mad
-    show killsalot mad1 at Position(xpos=600)
+    show harry mad at Position(xpos=0.5, ypos=0.95)
+    show benji mad at Position(xpos=0.25, ypos=0.95)
+    show penny mad at Position(xpos=0.42, ypos=0.95)
+    show jax mad at Position(xpos =0.30)
+    show slim mad at Position(xpos=0.37, ypos=0.95)
+    show killsalot mad2 at Position(xpos=0.90, ypos=0.95)
+    show soldiers at Position(xpos=0.70)
 
     # Dialogue for scene7
     
     ######Scene 7a#######
-    killsalot "Attack them!!"
 
-    play sound "FX/scene7_shooting.mp3" loop
-
-    soldiers "Many soldiers rush to Harry, Slim and the gang."
     benji "Harry your phone, it’s glowing again!"
-
-    stop sound
 
     play sound "FX/transporter.mp3"
 
     group surprised "A big flash and the gang, including Jax, are now in battle suits bristling with special weapons!"
 
-    penny "LET'S GET IT ON!"
+    jax "Grr, Grr!"
+
+    killsalot "Attack them!!"
+
+    soldiers "Many soldiers rush to Harry, Slim and the gang."
 
     play sound "FX/scene7_shooting.mp3" loop
+
+    penny "LET'S GET IT ON!"
 
     #####Battle Scene - kids fighting soldiers 7b? ###############
     group surprised "You and your group fight a desparate battle....."
@@ -79,6 +80,9 @@ label choice5:
 
     "Suddenly Benji get hit and goes down, swamped by Kilsalots soldiers."
 
+    hide benji
+    with dissolve
+
     harry "Benji!"
     slim "You can’t stop to help!"
 
@@ -88,38 +92,64 @@ label choice5:
 
     "Penny goes to Benji’s aid but is cut down down before she can help..."
 
+    hide penny
+    with dissolve
 
     harry "NOOOOO!"
     slim "You must hold fast! We can help them when we have finished this fight!"
 
 
-    "It’s too much for Harry who calls Jax to his side and they both charge the enemy. Jax is killed and Harry runs out of ammunition. Just before he his shot, Slim jumps in and takes the bullet."
+    "It’s too much for Harry who calls Jax to his side and they both charge the enemy."
 
+    jax "GRRRR!!"
+
+    "Jax is killed and Harry runs out of ammunition."
+
+    hide jax
+    with dissolve
+
+    "Just before he his shot, Slim jumps in and takes the bullet."
+
+    hide slim
+    with dissolve
 
     harry "RRRAAAAGGHHH"
 
     stop sound
 
-    play sound "FX/scene7_battle.mp3"
+    play sound "FX/scene7_battle.mp3" noloop
 
+    "Harry charges, Killsalots men with his bare hands."
 
-    "Harry charges, Killsalots men with his bare hands."# Fade to black
+    $ renpy.music.set_volume(0.7, 0, channel='sound')
 
-
-##This text comes up over black screen: 
-
+    play sound "FX/choice1part1.mp3"
 
     "You fought bravely, you fought well, and many of Killsalots soldiers were sent screaming to their graves."
+
+    play sound "FX/choice1part2.mp3"
+    
     "But 3 kids, an old man and a dog can only defeat so many crazed, highly trained killers."
+    
+    hide harry
+    with dissolve
+
+    play sound "FX/choice1part3.mp3"
+
     "It was all very dramatic and songs of your tragic, valiant ending start being sung in drinking halls throughout the Universe." 
+
+    play sound "FX/choice1part4.mp3"
+   
     "Until Killsalot uses the transporter he took from your lifeless hands to brutally conquer the galaxy and burn those drinking halls to the ground."
+
+    play sound "FX/choice1part5.mp3"
+    
     "You should have run away to fight another day. You have been defeated. Your adventure ends here."
 
     stop sound
     
     stop music fadeout 1.0 
-#Jump to credits after credit scene is created#
-   # jump credits
-
+    
+    jump credits
 
     return 

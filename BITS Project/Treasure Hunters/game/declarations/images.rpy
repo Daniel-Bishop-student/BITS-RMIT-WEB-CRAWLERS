@@ -131,7 +131,7 @@ label image_declarations:
     ##########
 
     image xeena excited = "images/characters/image_xeena_excited.png"
-    image side proud = "images/characters/image_xeena_proud.png"
+    image xeena proud = "images/characters/image_xeena_proud.png"
 
     image side xeena excited = "images/characters/side_image_xeena_happy_03.png"
     image side xeena proud = "images/characters/side_image_xeena_proud_03.png"

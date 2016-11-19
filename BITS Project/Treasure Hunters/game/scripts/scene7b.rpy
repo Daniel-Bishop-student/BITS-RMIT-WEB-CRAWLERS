@@ -3,18 +3,18 @@ label scene7b:
     scene scene7b1
     with fade
 
-    $ renpy.music.set_volume(0.8, 0, channel='music')
+    $ renpy.music.set_volume(0.6, 0, channel='music')
     $ renpy.music.set_volume(0.3, 0, channel='sound')
     
     play music "FX/scene3FXwind.mp3" fadeout 0.5 fadein 1.0 
 
-    show harry mad
-    show benji mad at right
-    show penny sad at left
-    show jax mad at Position(xpos =100)
-    show slim proud
-    show killsalot mad2 at Position(xpos=600)
-    show group surprised
+    show harry mad at Position(xpos=0.5, ypos=0.95)
+    show benji mad at Position(xpos=0.25, ypos=0.95)
+    show penny mad at Position(xpos=0.42, ypos=0.95)
+    show jax mad at Position(xpos =0.30)
+    show slim mad at Position(xpos=0.37, ypos=0.95)
+    show killsalot mad2 at Position(xpos=0.90, ypos=0.95)
+    show soldiers at Position(xpos=0.70)
 
 
     ###Ending Scenario 2
@@ -30,17 +30,35 @@ label choice6:
 
     "Harry hits the phone button."
 
+    group surprised "Your group uses the transporter to escape!"
+
     play sound "FX/transporter.mp3"
 
-    group "Your group uses the transporter to escape!"
+    hide harry
+    with dissolve
+    hide benji
+    with dissolve
+    hide penny
+    with dissolve
+    hide jax
+    with dissolve
+    hide slim
+    with dissolve
 
-    killsalot  "They have escaped me, but I will make them suffer."
+    killsalot surprised "They have escaped me, but I will make them suffer."
 
     killsalot "The villages nearby, their friends, their families ... Burn them all!"
 
+    scene scene4
+    with fade
 
-#The next day: Other location on brenner 456
-    show slim mad
+    play music "FX/scene3FXwind.mp3" fadeout 2.0 fadein 1.0
+
+    show harry mad at Position(xpos=0.5, ypos=0.95)
+    show benji mad at Position(xpos=0.25, ypos=0.95)
+    show penny sad at Position(xpos=0.70, ypos=0.95)
+    show slim mad at Position(xpos=0.37, ypos=0.95)
+    show jax mad at right
 
     slim "I have received word that Killsalot burned the village after we left.  There were only a few survivors."
 
@@ -49,6 +67,8 @@ label choice6:
     show penny mad
     
     penny "That bastard!"
+
+    jax "Grr Grr"
     
     benji "We’ve got to help them Harry!"
     
@@ -62,7 +82,6 @@ label choice6:
 
     slim "And so it begins..."
 
-##Jump to credits####
-   # jump credits
-##The end of scenario 2
+    jump credits
+
     return
