@@ -21,19 +21,22 @@ label scene1:
     choice "What would you like them to be"
 
     $ harry_name = renpy.input("Enter a new name for Harry!")
-    $ harry_name = harry_name.strip()
     if harry_name == "":
         $ harry_name = "Harry"
+    $ harry_name = harry_name.strip()
+    
 
     $ benji_name = renpy.input("Enter a new name for Benji!")
-    $ benji_name = benji_name.strip()
     if benji_name == "":
         $ benji_name = "Benji"
+    $ benji_name = benji_name.strip()
+    
 
     $ penny_name = renpy.input("Enter a new name for Penny!")
-    $ penny_name = penny_name.strip()
     if penny_name == "":
         $ penny_name="Penny"
+    $ penny_name = penny_name.strip()
+    
 
     group "Happy Birthday dear %(harry_name)s, Happy Birthday to you!"
 
