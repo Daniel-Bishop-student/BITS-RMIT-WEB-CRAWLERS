@@ -20,7 +20,7 @@ label scene2a:
 
     play sound "FX/scene2a_harry_phone.mp3"
 
-    penny "Harry! I think your new phone is ringing!"
+    penny "%(harry_name)s! I think your new phone is ringing!"
 
     choice "What do you do? Try to save your group from getting crushed by the tram or answer the phone? Continue to make your choice...."
 

@@ -35,11 +35,11 @@ label scene1:
     if penny_name == "":
         $ penny_name="Penny"
 
-    group "Happy Birthday dear Harry, happy birthday to you!"
+    group "Happy Birthday dear %(harry_name)s, Happy Birthday to you!"
 
     jax "Woff Woof"
 
-    grandma "Open your present Harry..."
+    grandma "Open your present %(harry_name)s..."
 
     harry "It's a new phone! Thanks Grandma!"
 

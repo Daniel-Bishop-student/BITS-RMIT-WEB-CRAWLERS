@@ -16,7 +16,11 @@ label scene5:
 
     # Dialogue for scene5
 
-    slim "Ah here look!, Kia stone.  The stone will look after the chosen one. Sometimes a traumatic event or emotion can trigger the Kia stone to protect the chosen one. Where did you get this 'phone'?"
+    slim "Ah here look!, Kia stone.  The stone will look after the chosen one." 
+
+    slim "Sometimes a traumatic event or emotion can trigger the Kia stone to protect the chosen one." 
+
+    slim "Where did you get this 'phone'?"
 
     harry surprised "My grandmother gave it to me. She must have known."
 

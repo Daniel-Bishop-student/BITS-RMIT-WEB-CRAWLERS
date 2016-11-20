@@ -32,11 +32,11 @@ label scene6:
 
     harry "Transporter? What I don’t.."
 
-    penny "I think he means your phone Harry..."
+    penny "I think he means your phone %(harry_name)s..."
 
     benji "He can’t have it or we’ll never get home!"
 
-    slim "He’s right and with the transporter he will be able to terrorise dimensions other than our own and possibly yours Harry."
+    slim "%(benji_name)s is right and with the transporter he will be able to terrorise dimensions other than our own and possibly yours %(harry_name)s."
     
     killsalot "The Transporter! Give it to me or it will be taken from you. Soldiers, grab them!"
 
@@ -89,7 +89,7 @@ label choice3:
     
     "You didn’t actually think that would work do you?"
     "Killsalot was lying through his crooked black teeth." 
-    "He kills Slim and Jax, forces Penny to marry him and turns Benji and you into live punching bags for his soldiers."
+    "He kills Slim and Jax, forces %(penny_name)s to marry him and turns %(benji_name)s and you into live punching bags for his soldiers."
     "Then he uses the transporter to terrorise the Universe, enslaving all that get in his way... Bad choice and your adventure ends here."
 
     stop sound

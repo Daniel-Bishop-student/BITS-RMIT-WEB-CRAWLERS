@@ -21,9 +21,9 @@ label scene4:
 
     slim "Today marks exactly 65 moon cycles since the fire cloud... and here you are!"
 
-    penny "I still don’t understand? Wait unless.....Harry your phone!?"
+    penny "I still don’t understand? Wait unless.....%(harry_name)s your phone!?"
 
-    harry "Yeah?"
+    harry "What about it %(penny_name)s?"
 
     penny "It made a big flash right before we came to, and now all of a sudden we’re here in this place!"
 

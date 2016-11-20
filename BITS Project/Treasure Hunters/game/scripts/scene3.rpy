@@ -43,7 +43,7 @@ label scene3:
 
     harry "Us?"
 
-    slim "No ... YOU Harry, you."
+    slim "No ... YOU %(harry_name)s, you."
 
     stop music fadeout 1.0
 

@@ -21,7 +21,7 @@ label choice7:
 
     harry "There that thick scrub, run we’ll be able to hide in there!"
 
-    group surprised "All the kids and Slim run into the scrub."
+    group surprised "All the kids, and Slim, run into the scrub."
 
     show harry mad at Position(xpos=0.30, ypos=0.95)
     show benji mad at Position(xpos=0.25, ypos=0.95)
@@ -33,15 +33,15 @@ label choice7:
 
     soldiers "Yes Master!"
 
-    group "Kids huddled together behind a giant bolder." 
+    group "The gang huddles together behind a giant bolder." 
 
-    benji "It’s no use Harry, they’ll find us eventually. Maybe if we turn ourselves in they’ll spare our lives?"
+    benji "It’s no use %(harry_name)s, they’ll find us eventually. Maybe if we turn ourselves in they’ll spare our lives?"
 
     slim "They spare no one."
 
     penny "Well if we’re going out, let’s go out fighting.  Who’s with me?"
 
-    "Just then a ship floats overhead and shoots a beam down and scoops Harry and the kids up in it."
+    "Just then a ship floats overhead and shoots a beam down and scoops %(harry_name)s and the kids up in it."
 
     hide harry
     with dissolve
@@ -78,7 +78,7 @@ label choice7:
     
     slim "It’s ok! These people are the Amazon rebellion, an alliance formed from the few that survived the initial invasion"
 
-    xeena "Welcome warriors! Any enemy of killsalot is a friend of ours. Rest up. We have a long journey ahead of us."
+    xeena "Welcome warriors! Any enemy of Killsalot is a friend of ours. Rest up. We have a long journey ahead of us."
 
     jax "Woof, Woof!"
 

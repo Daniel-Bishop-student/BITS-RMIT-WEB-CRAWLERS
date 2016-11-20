@@ -20,7 +20,7 @@ label scene7a:
     
     ######Scene 7a#######
 
-    benji "Harry your phone, it’s glowing again!"
+    benji "%(harry_name)s your phone, it’s glowing again!"
 
     play sound "FX/transporter.mp3"
 
@@ -30,7 +30,7 @@ label scene7a:
 
     killsalot "Attack them!!"
 
-    soldiers "Many soldiers rush to Harry, Slim and the gang."
+    soldiers "Many soldiers rush to %(harry_name)s, Slim and the gang."
 
     play sound "FX/scene7_shooting.mp3" loop
 
@@ -39,9 +39,9 @@ label scene7a:
     #####Battle Scene - kids fighting soldiers 7b? ###############
     group surprised "You and your group fight a desparate battle....."
 
-    benji "Harry there’s too many!"
-    slim "He’s right! You must retreat Harry. You must not let the transporter fall into Killsalot’s hands."
-    penny "Use the transporter Harry! Get us out of here!"
+    benji "%(harry_name)s there’s too many!"
+    slim "%(benji_name)s is right! You must retreat %(harry_name)s. You must not let the transporter fall into Killsalot’s hands."
+    penny "Use the transporter %(harry_name)s! Get us out of here!"
     slim "No! Remember, the Rebellion is nearby. If we can find them, they may be able to help us."
 
     stop sound 
@@ -63,7 +63,7 @@ label choice5:
 
     play sound "FX/scene7_shooting.mp3" loop
     
-    "Harry hears his friend’s words but all he sees is red. His is pumped up, he is angry and he wants blood. Something deep within him has awoken."
+    "%(harry_name)s hears his friend’s words but all he sees is red. His is pumped up, he is angry and he wants blood. Something deep within him has awoken."
 
 
     "There is a lull in the fighting as Killsalots men regroup..."
@@ -78,19 +78,19 @@ label choice5:
 #####Cut scenes as each of the group get their own brief close up in a battle pose.######
 
 
-    "Suddenly Benji get hit and goes down, swamped by Kilsalots soldiers."
+    "Suddenly %(benji_name)s get hit and goes down, swamped by Kilsalots soldiers."
 
     hide benji
     with dissolve
 
-    harry "Benji!"
+    harry "%(benji_name)s!"
     slim "You can’t stop to help!"
 
     show penny sad 
     penny "But I have to!"
 
 
-    "Penny goes to Benji’s aid but is cut down down before she can help..."
+    "%(penny_name)s goes to %(benji_name)s’s aid but is cut down down before she can help..."
 
     hide penny
     with dissolve
@@ -99,16 +99,16 @@ label choice5:
     slim "You must hold fast! We can help them when we have finished this fight!"
 
 
-    "It’s too much for Harry who calls Jax to his side and they both charge the enemy."
+    "It’s too much for %(harry_name)s who calls Jax to his side and they both charge the enemy."
 
     jax "GRRRR!!"
 
-    "Jax is killed and Harry runs out of ammunition."
+    "Jax is killed and %(harry_name)s runs out of ammunition."
 
     hide jax
     with dissolve
 
-    "Just before he his shot, Slim jumps in and takes the bullet."
+    "Just before %(harry_name)s is shot by Killsalot's soldiers, Slim jumps in and takes the bullet."
 
     hide slim
     with dissolve
@@ -119,7 +119,7 @@ label choice5:
 
     play sound "FX/scene7_battle.mp3" noloop
 
-    "Harry charges, Killsalots men with his bare hands."
+    "%(harry_name)s charges, Killsalots men with his bare hands."
 
     $ renpy.music.set_volume(0.7, 0, channel='sound')
 

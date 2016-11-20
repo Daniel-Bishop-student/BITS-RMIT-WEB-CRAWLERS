@@ -492,20 +492,28 @@ init -2:
 screen quick_menu():
 
     # Add an in-game quick menu.
-    hbox:
-        style_group "quick"
+    imagemap:
+        ground 'images/menu/menu_idle.png'
+        idle 'images/menu/menu_idle.png' 
+        hover 'images/menu/menu_hover.png'
+        
+        alpha False
+        
+        hotspot (1109, 681, 48, 29) action ShowMenu("save")
+        hotspot (1072, 681, 30, 29) action ShowMenu("preferences")
+        hotspot (1164, 682, 50, 29) action ShowMenu("load")
+        hotspot (1221, 681, 50, 29) action Skip()
+    # hbox:
+    #     style_group "quick"
 
-        xalign 1.0
-        yalign 1.0
+    #     xalign 1.0
+    #     yalign 1.0
 
-        textbutton _("Back") action Rollback()
-        textbutton _("Save") action ShowMenu('save')
-        textbutton _("Q.Save") action QuickSave()
-        textbutton _("Q.Load") action QuickLoad()
-        textbutton _("Skip") action Skip()
-        textbutton _("F.Skip") action Skip(fast=True, confirm=True)
-        textbutton _("Auto") action Preference("auto-forward", "toggle")
-        textbutton _("Prefs") action ShowMenu('preferences')
+    #     textbutton _("Prefs") action ShowMenu('preferences')
+    #     textbutton _("Save") action ShowMenu('save')
+    #     textbutton _("Q.Load") action ShowMenu("load")
+    #     textbutton _("Skip") action Skip()
+        
 
 init -2:
     style quick_button:
