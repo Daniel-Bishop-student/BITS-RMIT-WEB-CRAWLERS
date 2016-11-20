@@ -3,11 +3,11 @@
 
 label character_declarations:
 
-    define harry = Character('Harry', image = "harry")
+    define harry = Character('harry_name', dynamic=True, image = "harry")
 
-    define benji = Character('Benji', image = "benji")
+    define benji = Character('benji_name', dynamic=True, image = "benji")
 
-    define penny = Character('Penny', image = "penny")
+    define penny = Character('penny_name', dynamic=True, image = "penny")
 
     define jax = Character('Jax', image = "jax")
 
@@ -21,6 +21,10 @@ label character_declarations:
 
     define group = Character('Group', image = "group")
 
+    define soldiers = Character('Soldiers', image = "soldiers")
+
     define choice = Character('Choice', image = "choice")
+
+    define narrator = Character('Narrator', image = "narrator")
 
     return
