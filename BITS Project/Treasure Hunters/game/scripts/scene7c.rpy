@@ -41,7 +41,7 @@ label choice7:
 
     penny "Well if we’re going out, let’s go out fighting.  Who’s with me?"
 
-    "Just then a ship floats overhead and shoots a beam down and scoops %(harry_name)s and the kids up in it."
+    narrator "Just then a ship floats overhead and shoots a beam down and scoops %(harry_name)s and the kids up in it."
 
     hide harry
     with dissolve

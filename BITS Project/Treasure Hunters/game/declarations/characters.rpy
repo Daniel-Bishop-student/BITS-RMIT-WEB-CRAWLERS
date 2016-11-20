@@ -25,4 +25,6 @@ label character_declarations:
 
     define choice = Character('Choice', image = "choice")
 
+    define narrator = Character('Narrator', image = "narrator")
+
     return
