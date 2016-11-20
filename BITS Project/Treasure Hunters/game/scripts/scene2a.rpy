@@ -47,5 +47,5 @@ label choice1:
     "As quick as you think you are, the tram is quicker. It runs straight through the middle of all of you, tearing flesh and slicing limbs, crushing you with it’s heavy metal bulk. You, and your group are killed. Your adventure ends here. "
 
     stop music fadeout 1.0
-
+    jump credits
     return
