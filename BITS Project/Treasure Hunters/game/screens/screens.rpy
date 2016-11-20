@@ -502,7 +502,7 @@ screen quick_menu():
         hotspot (1109, 681, 48, 29) action ShowMenu("save")
         hotspot (1072, 681, 30, 29) action ShowMenu("preferences")
         hotspot (1164, 682, 50, 29) action ShowMenu("load")
-        hotspot (1221, 681, 50, 29) action Skip()
+        hotspot (1221, 681, 50, 29) action Return()
     # hbox:
     #     style_group "quick"
 
