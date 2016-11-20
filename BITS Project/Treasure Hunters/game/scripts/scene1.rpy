@@ -17,23 +17,28 @@ label scene1:
     
     # Dialogue for scene1
 
-    narrator "Before we start this adventure, you, the reader, get to choose the names of the the three main characters."
-    choice "What would you like them to be"
+    "Before we start this adventure, you, the reader, get to choose the names of the the three main characters."
+    choice "Would you like to change them?"
 
-    $ harry_name = renpy.input("Enter a new name for Harry!")
-    if harry_name == "":
-        $ harry_name = "Harry"
-    $ harry_name = harry_name.strip()
+    $ harry_name = "Harry"
+    $ benji_name = "Benji"
+    $ penny_name = "Penny"
+    
+    menu:
+        "Yes":
+            $ harry_name = renpy.input("Enter a new name for Harry!")
+            $ harry_name = harry_name.strip()
+            
 
-    $ benji_name = renpy.input("Enter a new name for Benji!")
-    if benji_name == "":
-        $ benji_name = "Benji"
-    $ benji_name = benji_name.strip()
+            $ benji_name = renpy.input("Enter a new name for Benji!")
+            $ benji_name = benji_name.strip()
+            
 
-    $ penny_name = renpy.input("Enter a new name for Penny!")
-    if penny_name == "":
-        $ penny_name="Penny"
-    $ penny_name = penny_name.strip()
+            $ penny_name = renpy.input("Enter a new name for Penny!")
+            $ penny_name = penny_name.strip()
+
+        "​no":
+            "Lets continue then!"
 
     group "Happy Birthday dear %(harry_name)s, Happy Birthday to you!"
 
@@ -41,7 +46,7 @@ label scene1:
 
     grandma "Open your present %(harry_name)s..."
 
-    harry excited "It's a new phone! Thanks Grandma!"
+    harry "It's a new phone! Thanks Grandma!"
 
     stop music fadeout 1.0
 

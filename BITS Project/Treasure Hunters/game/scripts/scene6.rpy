@@ -94,6 +94,8 @@ label choice3:
 
     stop sound
 
+    jump credits
+
     return
     
 label choice4:

@@ -50,4 +50,6 @@ label choice1:
 
     stop music fadeout 1.0
 
+    jump credits
+
     return
