@@ -93,7 +93,7 @@ label choice3:
     "Then he uses the transporter to terrorise the Universe, enslaving all that get in his way... Bad choice and your adventure ends here."
 
     stop sound
-
+    jump credits
     return
     
 label choice4:
