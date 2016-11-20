@@ -15,8 +15,6 @@ label scene5:
  
 
     # Dialogue for scene5
-    #License agreement compliance below
-    "Background courtesy of imgur"
 
     slim "Ah here look!, Kia stone.  The stone will look after the chosen one." 
 

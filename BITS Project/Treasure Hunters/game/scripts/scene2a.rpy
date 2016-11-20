@@ -34,7 +34,7 @@ label scene2a:
 
 label choice2:
     
-    "You answer the phone and it starts to glow...."
+    narrator "You answer the phone and it starts to glow...."
 
     jump scene3
 
@@ -42,10 +42,12 @@ label choice1:
 
     play music "FX/scene2a_Train_Hits_Group.mp3" noloop
 
-    play sound ["<silence 5.0>", "FX/endingChoice1.mp3"]
+    play sound ["<silence 5.0>", "FX/endingChoice1.mp3"] noloop
     
-    "As quick as you think you are, the tram is quicker. It runs straight through the middle of all of you, tearing flesh and slicing limbs, crushing you with it’s heavy metal bulk. You, and your group are killed. Your adventure ends here. "
+    narrator "As quick as you think you are, the tram is quicker. It runs straight through the middle of all of you, tearing flesh and slicing limbs, crushing you with it’s heavy metal bulk. You, and your group are killed. Your adventure ends here. "
+
+    stop sound
 
     stop music fadeout 1.0
-    jump credits
+
     return

@@ -26,10 +26,10 @@ label scene3:
 
     play sound "FX/scene3_slim_enigma.mp3"
 
-    "IT IS THE PROPHECY FORETOLD!"
-
     show slim excited at Position(xpos=0.37, ypos=0.95)
     with dissolve
+
+    slim "IT IS THE PROPHECY FORETOLD!"
 
     harry "Wah!?"
 

@@ -91,6 +91,12 @@ label image_declarations:
     image side killsalot surprised = "images/characters/side_image_killsalot_surprised_03.png"
 
     ##########
+    # Narrator
+    ##########
+
+    image side narrator = "images/characters/side_image_narrator.png"
+
+    ##########
     # Penny
     ##########
 

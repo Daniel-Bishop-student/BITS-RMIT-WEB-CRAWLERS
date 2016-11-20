@@ -28,7 +28,7 @@ label choice6:
 
     harry "We should go..." 
 
-    "%(harry_name)s hits the phone button."
+    narrator "%(harry_name)s hits the phone button."
 
     group surprised "Your group uses the transporter to escape!"
 

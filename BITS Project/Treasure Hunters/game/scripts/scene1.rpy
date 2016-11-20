@@ -17,7 +17,7 @@ label scene1:
     
     # Dialogue for scene1
 
-    "Before we start this adventure, you, the reader, get to choose the names of the the three main characters."
+    narrator "Before we start this adventure, you, the reader, get to choose the names of the the three main characters."
     choice "What would you like them to be"
 
     $ harry_name = renpy.input("Enter a new name for Harry!")
