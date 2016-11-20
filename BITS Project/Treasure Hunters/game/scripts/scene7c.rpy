@@ -82,9 +82,7 @@ label choice7:
 
     jax "Woof, Woof!"
 
-    penny excited "But where are we going? How many of you are there? Why..."
-
-    #show xeena proud
+    penny surprised "But where are we going? How many of you are there? Why..."
 
     xeena proud "All in good time my dear, all in good time..."
 
