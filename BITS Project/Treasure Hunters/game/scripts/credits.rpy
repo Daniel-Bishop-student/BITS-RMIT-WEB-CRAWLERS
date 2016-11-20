@@ -4,7 +4,7 @@
 ## https://lemmasoft.renai.us/forums/viewtopic.php?f=8&t=24079
 label credits:
 
-    $ credits_speed = 35 #scrolling speed in seconds
+    $ credits_speed = 36 #scrolling speed in seconds
     scene black
     with dissolve
     show cred at Move((0.5, 6.5), (0.5, 0.0), credits_speed, repeat=False, bounce=False, xanchor="center", yanchor="bottom")
