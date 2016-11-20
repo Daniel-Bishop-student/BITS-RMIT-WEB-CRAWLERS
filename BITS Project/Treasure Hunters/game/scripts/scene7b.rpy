@@ -20,15 +20,15 @@ label scene7b:
     ###Ending Scenario 2
 label choice6:
 
-    penny "Harry if we fight and die we dont help anybody, there will be another day and we will be ready.  Then Killsalot will get what he deserves."
+    penny "%(harry_name)s if we fight and die we dont help anybody, there will be another day and we will be ready.  Then Killsalot will get what he deserves."
 
-    slim "She is wise but our rebellion will not go unpunished."
+    slim "%(penny_name)s is wise but our rebellion will not go unpunished."
 
-    benji "Harry! He’s coming!"
+    benji "%(harry_name)s! He’s coming!"
 
     harry "We should go..." 
 
-    "Harry hits the phone button."
+    "%(harry_name)s hits the phone button."
 
     group surprised "Your group uses the transporter to escape!"
 
@@ -70,13 +70,13 @@ label choice6:
 
     jax "Grr Grr"
     
-    benji "We’ve got to help them Harry!"
+    benji "We’ve got to help them %(harry_name)s!"
     
-    harry "I know and we will..."
+    harry "I know %(benji_name)s, and we will..."
     
     harry "I vow that we will rid this place of that vile creature Killsalot."
     
-    benji "Yeah! Too right Harry."
+    benji "Yeah! Too right %(harry_name)s."
 
     show slim proud
 
