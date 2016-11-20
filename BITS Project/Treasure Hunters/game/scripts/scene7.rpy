@@ -63,10 +63,10 @@ label choice5:
 
     play sound "FX/scene7_shooting.mp3" loop
     
-    narrator "%(harry_name)s hears his friend’s words but all he sees is red. His is pumped up, he is angry and he wants blood. Something deep within him has awoken."
+    "%(harry_name)s hears his friend’s words but all he sees is red. His is pumped up, he is angry and he wants blood. Something deep within him has awoken."
 
 
-    narrator "There is a lull in the fighting as Killsalots men regroup..."
+    "There is a lull in the fighting as Killsalots men regroup..."
 
 
     harry "NO! Here is where we stand, here is where we fight back. If we run now, we will never stop running."
@@ -78,7 +78,7 @@ label choice5:
 #####Cut scenes as each of the group get their own brief close up in a battle pose.######
 
 
-    narrator "Suddenly %(benji_name)s get hit and goes down, swamped by Kilsalots soldiers."
+    "Suddenly %(benji_name)s get hit and goes down, swamped by Kilsalots soldiers."
 
     hide benji
     with dissolve
@@ -99,16 +99,16 @@ label choice5:
     slim "You must hold fast! We can help them when we have finished this fight!"
 
 
-    narrator "It’s too much for %(harry_name)s who calls Jax to his side and they both charge the enemy."
+    "It’s too much for %(harry_name)s who calls Jax to his side and they both charge the enemy."
 
     jax "GRRRR!!"
 
-    narrator "Jax is killed and %(harry_name)s runs out of ammunition."
+    "Jax is killed and %(harry_name)s runs out of ammunition."
 
     hide jax
     with dissolve
 
-    narrator "Just before %(harry_name)s is shot by Killsalot's soldiers, Slim jumps in and takes the bullet."
+    "Just before %(harry_name)s is shot by Killsalot's soldiers, Slim jumps in and takes the bullet."
 
     hide slim
     with dissolve
@@ -119,32 +119,32 @@ label choice5:
 
     play sound "FX/scene7_battle.mp3" noloop
 
-    narrator "%(harry_name)s charges, Killsalots men with his bare hands."
+    "%(harry_name)s charges, Killsalots men with his bare hands."
 
     $ renpy.music.set_volume(0.7, 0, channel='sound')
 
     play sound "FX/choice1part1.mp3"
 
-    narrator "You fought bravely, you fought well, and many of Killsalots soldiers were sent screaming to their graves."
+    "You fought bravely, you fought well, and many of Killsalots soldiers were sent screaming to their graves."
 
     play sound "FX/choice1part2.mp3"
     
-    narrator "But 3 kids, an old man and a dog can only defeat so many crazed, highly trained killers."
+    "But 3 kids, an old man and a dog can only defeat so many crazed, highly trained killers."
     
     hide harry
     with dissolve
 
-    play sound "FX/choice1part3.mp3" noloop
+    play sound "FX/choice1part3.mp3"
 
-    narrator "It was all very dramatic and songs of your tragic, valiant ending start being sung in drinking halls throughout the Universe." 
+    "It was all very dramatic and songs of your tragic, valiant ending start being sung in drinking halls throughout the Universe." 
 
-    play sound "FX/choice1part4.mp3" noloop
+    play sound "FX/choice1part4.mp3"
    
-    narrator "Until Killsalot uses the transporter he took from your lifeless hands to brutally conquer the galaxy and burn those drinking halls to the ground."
+    "Until Killsalot uses the transporter he took from your lifeless hands to brutally conquer the galaxy and burn those drinking halls to the ground."
 
-    play sound "FX/choice1part5.mp3" noloop
+    play sound "FX/choice1part5.mp3"
     
-    narrator "You should have run away to fight another day. You have been defeated. Your adventure ends here."
+    "You should have run away to fight another day. You have been defeated. Your adventure ends here."
 
     stop sound
     

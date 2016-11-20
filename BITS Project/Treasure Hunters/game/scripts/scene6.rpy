@@ -87,13 +87,13 @@ label scene6:
 label choice3:
     play sound "FX/scene6_Evil_Laugh.mp3"
     
-    narrator "You didn’t actually think that would work do you?"
-    narrator "Killsalot was lying through his crooked black teeth." 
-    narrator "He kills Slim and Jax, forces %(penny_name)s to marry him and turns %(benji_name)s and you into live punching bags for his soldiers."
-    narrator "Then he uses the transporter to terrorise the Universe, enslaving all that get in his way... Bad choice and your adventure ends here."
+    "You didn’t actually think that would work do you?"
+    "Killsalot was lying through his crooked black teeth." 
+    "He kills Slim and Jax, forces %(penny_name)s to marry him and turns %(benji_name)s and you into live punching bags for his soldiers."
+    "Then he uses the transporter to terrorise the Universe, enslaving all that get in his way... Bad choice and your adventure ends here."
 
     stop sound
-
+    jump credits
     return
     
 label choice4:
